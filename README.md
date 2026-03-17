@@ -11,11 +11,11 @@ This repository contains examples and demonstrations of various chatbots and AI 
 
 Follow the steps in [google adk documentation](https://google.github.io/adk-docs/get-started/quickstart/) to set up the python venv environment.
 
-1. Make sure you have the required dependencies installed (e.g. `google-adk[agents]` and `yfinance-mcp-server`).
+1. Install dependencies
    ```bash
-   pip install "google-adk[agents]" yfinance-mcp-server
+   pip install -r requirements.txt
    ```
-2. Configure your environment variables in `.env`.
+2. Configure your environment variables in `.env` (copy from env.example`).
    - To use Vertex AI, set `GOOGLE_GENAI_USE_VERTEXAI=TRUE` and ensure you have run `gcloud auth application-default login`.
    - Or to use a Gemini API key directly, set `GEMINI_API_KEY="YOUR_KEY"`.
 3. Try running the agents:
